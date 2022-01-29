@@ -1,0 +1,19 @@
+@import '../../../styles/mixins';
+
+.my-input {
+  width: 180px;
+  font-size: 14px;
+  .my-input-inner {
+    border: 1px solid #dcdfe6;
+    padding: 0 15px;
+    color: #606266;
+    border-radius: 4px;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  .my-input-inner:focus {
+    outline: none;
+    border-color: #409eff;
+    cursor: text;
+  }
+}

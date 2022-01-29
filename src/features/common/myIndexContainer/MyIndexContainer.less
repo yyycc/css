@@ -1,0 +1,42 @@
+@import '../../../styles/mixins';
+
+.my-index-container {
+  display: flex;
+  margin: 0 auto;
+  width: 800px;
+  height: 300px;
+  box-shadow: 0 1px 20px -6px #00000080;
+  border-radius: 10px;
+  .my-index-container-content {
+    padding: 15px 20px;
+    width: 350px;
+    h3 {
+      border-bottom: 1px dashed;
+      padding: 0 0 10px 0;
+      margin: 10px 0;
+      cursor: pointer;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+  .my-index-container-content-tags {
+    font-size: 12px;
+    color: #cd0000;
+    .my-index-container-content-tag {
+      padding: 2px;
+      margin-left: 5px;
+    }
+  }
+  .my-index-container-content-detail {
+    p {
+      margin: 10px 0;
+    }
+  }
+  .my-index-container-pic {
+    object-fit: cover;
+    overflow: hidden;
+    width: 450px;
+    height: 300px;
+  }
+}

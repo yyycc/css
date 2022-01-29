@@ -1,0 +1,63 @@
+@import '../../../../styles/mixins';
+
+.overflow-hidden {
+  .overflow-hidden-container {
+    text-align: center;
+    font-size: 14px;
+    .grey {
+      background-color: #ddd;
+    }
+    .blue {
+      background-color: #89c6fc;
+    }
+    .green {
+      background-color: #b9f2d8;
+    }
+    .orange {
+      background-color: #fccba2;
+    }
+    .overflow-hidden-tab {
+      width: 20em;
+      height: 10em;
+      line-height: 10em;
+      border: 1px solid #ddd;
+      overflow: hidden;
+      margin: auto;
+      .overflow-hidden-tabs {
+        height: 100%;
+        text-align: center;
+        position: relative;
+        font-size: 8em;
+        input {
+          position: absolute; top:0;
+          height: 100%; width: 1px;
+          border:0; padding: 0; margin: 0;
+          clip: rect(0 0 0 0);
+        }
+      }
+    }
+    .overflow-hidden-key {
+      margin-top: 1em;
+      .overflow-hidden-keys {
+        display: inline-block;
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        border: 1px solid #ccc;
+        background: #f7f7f7;
+        color: #333;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+      }
+      .active {
+        background-color: #e0e0e0;
+        border: 1px solid #89c6fc;;
+      }
+    }
+    .overflow-hidden-desc {
+      margin-top: 40px;
+    }
+  }
+}

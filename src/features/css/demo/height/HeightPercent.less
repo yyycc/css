@@ -1,0 +1,50 @@
+@import '../../../../styles/mixins';
+
+.height-percent {
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  .child::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  .father {
+    height: 100px;
+    background-color: #beceeb;
+    padding: 30px;
+    .father-desc {
+      position: absolute;
+      margin-top: -25px;
+      font-size: 18px;
+      color: #495973;
+    }
+    .child {
+      height: 100%;
+      background-color: #cd0000;
+    }
+  }
+  .height-percent-normal {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .height-percent-absolute {
+    margin: 20px auto 0 auto;
+    width: 300px;
+    .father {
+      position: relative;
+      .child {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #cd0000;
+      }
+    }
+  }
+  .height-percent-desc {
+    margin-top: 100px;
+    font-size: 14px;
+    color: #000000;
+  }
+}

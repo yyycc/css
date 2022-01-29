@@ -1,20 +1,25 @@
 @import '../../styles/mixins';
-
+@header-height: 64px;
 .css-layout {
   .css-page-container {
-    padding: 40px 30px 0 300px;
-    min-width: 400px;
-    max-width: 700px;
+    padding: 40px 300px 0 300px;
   }
-  .layout-header {
+  .css-header {
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
     text-align: center;
     font-size: 20px;
-    line-height: 64px;
-    box-shadow: 0 1px 40px -8px rgb(0 0 0 / 50%);
-    .layout-header-image {
+    line-height: @header-height;
+    box-shadow: 0 1px 40px -8px #00000080;
+    .css-header-image {
       float: left;
       margin-top: 12px;
       margin-left: 12px;
     }
+  }
+  .css-header-blank {
+    padding-top: @header-height;
   }
 }

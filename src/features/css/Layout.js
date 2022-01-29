@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../../images/image.png'
+import image from '../../images/image.png';
 
 export default function Layout({ children }) {
   return (
@@ -8,6 +8,7 @@ export default function Layout({ children }) {
         <img className="css-header-image" src={image} height={'40px'} width={'40px'} />
         <span>CSS Demo</span>
       </div>
+      <div className="css-header-blank" />
       <div className="css-page-container">{children}</div>
     </div>
   );
