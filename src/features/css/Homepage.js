@@ -5,6 +5,7 @@ import maxHeight from '../../images/max-height.jpeg';
 import overflowHidden from '../../images/overflow-hidden.gif';
 import text from '../../images/text.jpg';
 import fillAvailable from '../../images/fill-available.gif';
+import float from '../../images/float.jpg';
 
 export default function Homepage() {
   const colors = ['#d9b8f1', '#dcff93', '#f1ccb8', '#b8f1ed', '#f1b8e4', '#b8f1cc', '#e7dac9'];
@@ -57,6 +58,16 @@ export default function Homepage() {
       src: fillAvailable,
       tags: ['text-align', 'span', 'width'],
       router: '/css/width/fill',
+    },
+    {
+      title: 'float实现文字环绕和布局',
+      detail:
+        '浮动的本质就是为了实现文字环绕效果。而这种文字环绕，主要指的就是文字环绕图片显示的效果。' +
+        '后来事情的发展超出了 CSS 设计者的意料，图文展示只是新时代 Web 展示的一小部分，而文字环绕这种上世纪风格的效果现在已然不流行了，' +
+        '于是 float 很少发挥其原本的作用，反而被大肆使用满屏布局',
+      src: float,
+      tags: ['float', '布局', '文字环绕'],
+      router: '/css/float',
     },
   ];
   return (

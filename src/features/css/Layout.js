@@ -10,6 +10,9 @@ export default function Layout({ children }) {
       </div>
       <div className="css-header-blank" />
       <div className="css-page-container">{children}</div>
+      <div className="css-header-back-top">
+        <a className="css-header-back-top-btn" href="#">顶</a>
+      </div>
     </div>
   );
 }

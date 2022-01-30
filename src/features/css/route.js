@@ -12,6 +12,7 @@ import Absolute from './demo/position/Absolute';
 import OverflowHidden from './demo/overflow/OverflowHidden';
 import Relative from './demo/position/Relative';
 import TextDirection from './demo/direction/TextDirection';
+import Float from './demo/float/Float';
 
 export default {
   path: 'css',
@@ -27,5 +28,6 @@ export default {
     { path: 'position/relative', component: Relative, isIndex: true },
     { path: 'overflow/hidden', component: OverflowHidden, isIndex: true },
     { path: 'direction', component: TextDirection, isIndex: true },
+    { path: 'float', component: Float, isIndex: true },
   ],
 };
