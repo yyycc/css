@@ -15,6 +15,10 @@ import TextDirection from './demo/direction/TextDirection';
 import Float from './demo/float/Float';
 import ReplacedElementImg from './demo/element/ReplacedElementImg';
 import UnitEx from './demo/height/UnitEx';
+import Content from './demo/content/Content';
+import LoadingDot from './demo/pseudo/LoadingDot';
+import Taiji from './demo/pseudo/Taiji';
+import Padding from './demo/box/Padding';
 
 export default {
   path: 'css',
@@ -33,5 +37,9 @@ export default {
     { path: 'direction', component: TextDirection, isIndex: true },
     { path: 'float', component: Float, isIndex: true },
     { path: 'element/img', component: ReplacedElementImg, isIndex: true },
+    { path: 'content', component: Content, isIndex: true },
+    { path: 'pseudo/loading', component: LoadingDot, isIndex: true },
+    { path: 'pseudo/taiji', component: Taiji, isIndex: true },
+    { path: 'box/padding', component: Padding, isIndex: true },
   ],
 };

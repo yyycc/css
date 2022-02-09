@@ -8,6 +8,9 @@ import fillAvailable from '../../images/fill-available.gif';
 import float from '../../images/float.jpg';
 import hover from '../../images/hover.mp4';
 import ex from '../../images/ex.gif';
+import loading from '../../images/loading.gif';
+import taiji from '../../images/taiji.jpg';
+import padding from '../../images/padding.jpg';
 
 export default function Homepage() {
   const colors = ['#d9b8f1', '#dcff93', '#f1ccb8', '#b8f1ed', '#f1b8e4', '#b8f1cc', '#e7dac9'];
@@ -92,13 +95,39 @@ export default function Homepage() {
       tags: ['ex', 'height'],
       router: '/css/height/ex',
     },
+    {
+      title: '实现...动画效果',
+      detail:
+        "'\\A'其实指的是换行符中的 LF 字符，其 Unicode 编码是 000A，在 CSS 的 content 属性中则直接写作'\\A'" +
+        "我们可以利用这里的'\\A'换行特性让“...”这几个字符动起来",
+      src: loading,
+      tags: ['伪元素', 'content'],
+      router: '/css/pseudo/loading',
+    },
+    {
+      title: '利用伪元素实现太极',
+      detail:
+        "::before 和 ::after 伪元素的初衷是用于插入内容——不受文档约束，也不影响文档本身（比如，不影响 DOM），只影响最终的样式。" +
+        "目前最多见的应用情形的确是把它们用成 content: \"\" 这样的空元素，然后给这个空元素加上各种样式。",
+      src: taiji,
+      tags: ['伪元素', 'content', 'position'],
+      router: '/css/pseudo/taiji',
+    },
+    {
+      title: 'padding',
+      detail: 'padding 属 性是不支持负值的;其二，padding 支持百分比值，padding 百分比值无论是水平方向还是垂直方向均是相对于宽度计算的',
+      src: padding,
+      tags: ['伪元素', 'padding', 'background-clip'],
+      router: '/css/box/padding',
+    },
   ];
   return (
     <div className="css-home-page">
       {details.map((del, index) => {
         del.color = colors[index % 8];
+        del.title = `${index+1}. ${del.title}`
         return (
-          <div className="css-home-page-timeline">
+          <div className="css-home-page-timeline" key={index}>
             <MyIndexContainer {...del} />
           </div>
         );

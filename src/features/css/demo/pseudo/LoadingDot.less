@@ -1,0 +1,33 @@
+@import '../../../../styles/mixins';
+
+@keyframes dot {
+  33% {
+    transform: translateY(-2em);
+  }
+  66% {
+    transform: translateY(-1em);
+  }
+}
+
+.loading-dot {
+  text-align: center;
+  .loading-dot-container {
+    .loading-dot-container-dots {
+      margin-top: 40px;
+      .loading-dot-container-dot {
+        display: inline-block;
+        height: 1em;
+        line-height: 1;
+        text-align: left;
+        vertical-align: -0.25em;
+        overflow: hidden;
+        &:before {
+          display: block;
+          content: '...\A..\A.';
+          white-space: pre-wrap;
+          animation: dot 3s infinite step-start both;
+        }
+      }
+    }
+  }
+}
