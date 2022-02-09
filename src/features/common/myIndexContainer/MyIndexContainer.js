@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-const MyIndexContainer = ({ title, detail, src, color, tags = [], router }) => {
+const MyIndexContainer = ({ title, detail, src, color, tags = [], router, srcType }) => {
   const contentBorder = {
     backgroundColor: color,
   };
@@ -21,7 +21,11 @@ const MyIndexContainer = ({ title, detail, src, color, tags = [], router }) => {
         </div>
       </div>
       <div className="my-index-container-pic">
-        <img src={src} />
+        {srcType === 'video' ? (
+          <video src={src} type="video/mp4" autoPlay={true} loop={true} />
+        ) : (
+          <img src={src} />
+        )}
       </div>
     </div>
   );

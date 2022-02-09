@@ -1,0 +1,22 @@
+@import '../../../../styles/mixins';
+
+.unit-ex {
+  text-align: center;
+  .unit-ex-container {
+    margin-top: 20px;
+    .unit-ex-mt {
+      margin-top: 10px;
+    }
+    button {
+      + button {
+        margin-left: 10px;
+      }
+    }
+    .unit-ex-container-icon {
+      display: inline-block;
+      width: 20px;
+      height: 1ex;
+      background: url("../../../../images/arrow.svg") no-repeat center/20px 20px;
+    }
+  }
+}

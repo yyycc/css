@@ -1,0 +1,18 @@
+@import '../../../../styles/mixins';
+
+.replaced-element {
+  text-align: center;
+  .replaced-element-container {
+    + .replaced-element-container {
+      margin-top: 20px;
+    }
+    .replaced-element-container-img {
+      height: 300px;
+    }
+    .replaced-element-container-change {
+      &:hover {
+        content: url('../../../../images/kittyBite.jpeg');
+      }
+    }
+  }
+}

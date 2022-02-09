@@ -13,6 +13,8 @@ import OverflowHidden from './demo/overflow/OverflowHidden';
 import Relative from './demo/position/Relative';
 import TextDirection from './demo/direction/TextDirection';
 import Float from './demo/float/Float';
+import ReplacedElementImg from './demo/element/ReplacedElementImg';
+import UnitEx from './demo/height/UnitEx';
 
 export default {
   path: 'css',
@@ -21,6 +23,7 @@ export default {
     { path: '', component: Homepage, isIndex: true },
     { path: 'height', component: HeightPercent, isIndex: true },
     { path: 'height/max', component: MaxHeight, isIndex: true },
+    { path: 'height/ex', component: UnitEx, isIndex: true },
     { path: 'width', component: WidthAuto, isIndex: true },
     { path: 'width/fill', component: FillAvailable, isIndex: true },
     { path: 'position', component: Position, isIndex: true },
@@ -29,5 +32,6 @@ export default {
     { path: 'overflow/hidden', component: OverflowHidden, isIndex: true },
     { path: 'direction', component: TextDirection, isIndex: true },
     { path: 'float', component: Float, isIndex: true },
+    { path: 'element/img', component: ReplacedElementImg, isIndex: true },
   ],
 };

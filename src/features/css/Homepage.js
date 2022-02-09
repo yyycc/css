@@ -6,6 +6,8 @@ import overflowHidden from '../../images/overflow-hidden.gif';
 import text from '../../images/text.jpg';
 import fillAvailable from '../../images/fill-available.gif';
 import float from '../../images/float.jpg';
+import hover from '../../images/hover.mp4';
+import ex from '../../images/ex.gif';
 
 export default function Homepage() {
   const colors = ['#d9b8f1', '#dcff93', '#f1ccb8', '#b8f1ed', '#f1b8e4', '#b8f1cc', '#e7dac9'];
@@ -68,6 +70,27 @@ export default function Homepage() {
       src: float,
       tags: ['float', '布局', '文字环绕'],
       router: '/css/float',
+    },
+    {
+      title: 'hover时显示不同图片',
+      detail:
+        '替换元素之所以为替换元素，就是因为其内容可替换，而这个内容就是 margin、border、 padding和content这4个盒子中的content box，' +
+        '对应的CSS属性是content，所以，从 理论层面讲，content 属性决定了是替换元素还是非替换元素',
+      src: hover,
+      srcType: 'video',
+      tags: ['content', '替换元素'],
+      router: '/css/element/img',
+    },
+    {
+      title: '文字图标垂直居中(不受字体大小影响)',
+      detail:
+        'ex 是 CSS 中的一个相对单位，指的是小写字母 x 的高度。' +
+        '由于字母 x 受字体等 CSS 属性影响大，不稳定，因此 ex 不太适合用来限定元素的尺寸。' +
+        '内联元素默认是基线对齐的，而基线就是 x 的底部，而 1ex 就是一个 x 的高度。' +
+        '图标高度1ex，同时背景图片居中，图标和文字就能垂直居中，而且完全不受字体和字号的影响',
+      src: ex,
+      tags: ['ex', 'height'],
+      router: '/css/height/ex',
     },
   ];
   return (
