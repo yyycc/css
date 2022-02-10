@@ -19,7 +19,7 @@ const MyIndexContainer = ({ title, detail, src, color, tags = [], router, srcTyp
           ))}
         </div>
         <div className="my-index-container-content-detail">
-          <p>{detail}</p>
+          {detail.map(ele => <p>{ele}</p>)}
         </div>
       </div>
       <div className="my-index-container-pic">

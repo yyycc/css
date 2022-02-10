@@ -19,6 +19,7 @@ import Content from './demo/content/Content';
 import LoadingDot from './demo/pseudo/LoadingDot';
 import Taiji from './demo/pseudo/Taiji';
 import Padding from './demo/box/Padding';
+import Margin from './demo/box/Margin';
 
 export default {
   path: 'css',
@@ -41,5 +42,6 @@ export default {
     { path: 'pseudo/loading', component: LoadingDot, isIndex: true },
     { path: 'pseudo/taiji', component: Taiji, isIndex: true },
     { path: 'box/padding', component: Padding, isIndex: true },
+    { path: 'box/margin', component: Margin, isIndex: true },
   ],
 };
