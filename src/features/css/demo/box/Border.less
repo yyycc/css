@@ -1,0 +1,60 @@
+@import '../../../../styles/mixins';
+
+@back-size: 100px;
+@plus-size: 32px;
+@border-size: 4px;
+
+.border {
+  text-align: center;
+  .border-container {
+    .border-container-box {
+      margin: 40px auto;
+      color: #ccc;
+      height: @back-size;
+      width: @back-size;
+      border: @border-size dashed;
+      &:before {
+        content: '';
+        margin-top: calc((@back-size - @plus-size) / 2);
+        height: @plus-size;
+        position: absolute;
+        border-right: @border-size solid;
+      }
+      &:after {
+        content: '';
+        margin-left: calc((@border-size - @plus-size) / 2);
+        margin-top: calc((@back-size - @border-size) / 2);
+        width: @plus-size;
+        position: absolute;
+        border-bottom: @border-size solid;
+      }
+      &:hover {
+        color: #34538b;
+        cursor: pointer;
+      }
+    }
+    .border-container-triangle {
+      margin: 0 auto;
+      width: 0;
+      border: 20px solid;
+      border-color: #f30 transparent transparent;
+    }
+    .border-container-tooltip {
+      margin: 20px auto;
+      width: 300px;
+      line-height: 32px;
+      background-color: #99cccc;
+      border-radius: 5px;
+      &:before {
+        position: absolute;
+        content: '';
+        width: 0;
+        border-width: 20px 15px 0 0;
+        border-style: solid;
+        border-color: #99cccc transparent transparent;
+        margin-top: 32px;
+        margin-left: 20px;
+      }
+    }
+  }
+}

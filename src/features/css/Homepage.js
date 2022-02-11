@@ -12,6 +12,7 @@ import loading from '../../images/loading.gif';
 import taiji from '../../images/taiji.jpg';
 import padding from '../../images/padding.jpg';
 import margin from '../../images/marginMerge.gif';
+import border from '../../images/border.jpg';
 
 export default function Homepage() {
   const colors = ['#d9b8f1', '#dcff93', '#f1ccb8', '#b8f1ed', '#f1b8e4', '#b8f1cc', '#e7dac9'];
@@ -143,6 +144,17 @@ export default function Homepage() {
       src: margin,
       tags: ['margin', 'margin合并'],
       router: '/css/box/margin',
+    },
+    {
+      title: '利用border实现三角形',
+      detail: [
+        'border-width 却不支持百分比。',
+        'border-style 的默认值是 none。',
+        'border-color 默认颜色就是 color 色值',
+      ],
+      src: border,
+      tags: ['border'],
+      router: '/css/box/border',
     },
   ];
   return (
