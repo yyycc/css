@@ -21,6 +21,7 @@ import Taiji from './demo/pseudo/Taiji';
 import Padding from './demo/box/Padding';
 import Margin from './demo/box/Margin';
 import Border from './demo/box/Border';
+import Layers from './demo/layers/Layers';
 
 export default {
   path: 'css',
@@ -45,5 +46,6 @@ export default {
     { path: 'box/padding', component: Padding, isIndex: true },
     { path: 'box/margin', component: Margin, isIndex: true },
     { path: 'box/border', component: Border, isIndex: true },
+    { path: 'layers', component: Layers, isIndex: true },
   ],
 };

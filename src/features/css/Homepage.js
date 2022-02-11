@@ -13,9 +13,19 @@ import taiji from '../../images/taiji.jpg';
 import padding from '../../images/padding.jpg';
 import margin from '../../images/marginMerge.gif';
 import border from '../../images/border.jpg';
+import tape from '../../images/tape.jpg';
 
 export default function Homepage() {
-  const colors = ['#d9b8f1', '#dcff93', '#f1ccb8', '#b8f1ed', '#f1b8e4', '#b8f1cc', '#e7dac9'];
+  const colors = [
+    '#f1ccb8',
+    '#d9b8f1',
+    '#dcff93',
+    '#f6c06d',
+    '#b8f1ed',
+    '#e7dac9',
+    '#f1b8e4',
+    '#b8f1cc',
+  ];
   const details = [
     {
       title: '百分比高度是如何计算的',
@@ -155,6 +165,30 @@ export default function Homepage() {
       src: border,
       tags: ['border'],
       router: '/css/box/border',
+    },
+    {
+      title: '利用border实现三角形',
+      detail: [
+        'border-width 却不支持百分比。',
+        'border-style 的默认值是 none。',
+        'border-color 默认颜色就是 color 色值',
+      ],
+      src: border,
+      tags: ['border'],
+      router: '/css/box/border',
+    },
+    {
+      title: '标题交代',
+      detail: [
+        '渐变背景色：',
+        'linear-gradient(',
+        'to bottom, #f4f39e, #f5da41 60%, #fe6',
+        ')',
+        '旋转transform: rotate(-5deg)',
+      ],
+      src: tape,
+      tags: ['transform', 'after'],
+      router: '/css/layers',
     },
   ];
   return (
