@@ -11,7 +11,7 @@ import MaxHeight from './demo/height/MaxHeight';
 import Absolute from './demo/position/Absolute';
 import OverflowHidden from './demo/overflow/OverflowHidden';
 import Relative from './demo/position/Relative';
-import TextDirection from './demo/direction/TextDirection';
+import TextDirection from './demo/font/TextDirection';
 import Float from './demo/float/Float';
 import ReplacedElementImg from './demo/element/ReplacedElementImg';
 import UnitEx from './demo/height/UnitEx';
@@ -22,6 +22,9 @@ import Padding from './demo/box/Padding';
 import Margin from './demo/box/Margin';
 import Border from './demo/box/Border';
 import Layers from './demo/layers/Layers';
+import FontAlign from './demo/font/FontAlign';
+import FontWeight from './demo/font/FontWeight';
+import LetterSpacing from './demo/font/LetterSpacing';
 
 export default {
   path: 'css',
@@ -37,7 +40,6 @@ export default {
     { path: 'position/absolute', component: Absolute, isIndex: true },
     { path: 'position/relative', component: Relative, isIndex: true },
     { path: 'overflow/hidden', component: OverflowHidden, isIndex: true },
-    { path: 'direction', component: TextDirection, isIndex: true },
     { path: 'float', component: Float, isIndex: true },
     { path: 'element/img', component: ReplacedElementImg, isIndex: true },
     { path: 'content', component: Content, isIndex: true },
@@ -47,5 +49,9 @@ export default {
     { path: 'box/margin', component: Margin, isIndex: true },
     { path: 'box/border', component: Border, isIndex: true },
     { path: 'layers', component: Layers, isIndex: true },
+    { path: 'font/direction', component: TextDirection, isIndex: true },
+    { path: 'font/align', component: FontAlign, isIndex: true },
+    { path: 'font/weight', component: FontWeight, isIndex: true },
+    { path: 'font/fly', component: LetterSpacing, isIndex: true },
   ],
 };

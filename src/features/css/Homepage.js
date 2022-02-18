@@ -14,6 +14,8 @@ import padding from '../../images/padding.jpg';
 import margin from '../../images/marginMerge.gif';
 import border from '../../images/border.jpg';
 import tape from '../../images/tape.jpg';
+import fontAlign from '../../images/fontAlign.jpg';
+import fontWeight from '../../images/fontWeight.jpg';
 
 export default function Homepage() {
   const colors = [
@@ -62,13 +64,13 @@ export default function Homepage() {
     {
       title: '如何让多余文字的...显示在左边',
       detail: [
-        'direction 属性默认有这么一个特性，即可以改变替换元素或者 inline-block/\n' +
+        'font 属性默认有这么一个特性，即可以改变替换元素或者 inline-block/\n' +
           'inline-table 元素的水平呈现顺序。' +
           '这种特性表现的作用就是我们可以兵不血刃地改变元素的 水平呈现顺序。',
       ],
       src: text,
       tags: ['ellipsis', 'direction', 'dir'],
-      router: '/css/direction',
+      router: '/css/font',
     },
     {
       title: '文字少居中显示，超过一行居左效果',
@@ -178,7 +180,7 @@ export default function Homepage() {
       router: '/css/box/border',
     },
     {
-      title: '标题交代',
+      title: '标题胶带',
       detail: [
         '渐变背景色：',
         'linear-gradient(',
@@ -189,6 +191,29 @@ export default function Homepage() {
       src: tape,
       tags: ['transform', 'after'],
       router: '/css/layers',
+    },
+    {
+      title: '文字垂直居中',
+      detail: [
+        '多行文字使用一个标签包裹，然后设置 display 为 inline-block。',
+        '产生一个非常关键的“行框盒子”。我们需要它附带的一个产物— “幽灵空白节点”，' +
+        '即一个宽度为 0、表现如同普通字符的看不见的“节点”。' +
+        '有了这个“幽灵空白节点”，我们的 line- height:120px 就有了作用的对象',
+      ],
+      src: fontAlign,
+      tags: ['内联', 'vertical-align'],
+      router: '/css/font/align',
+    },
+    {
+      title: 'font-weight',
+      detail: [
+        'font-weight的属性值支持100~900 的整百数',
+        'font-weight 要想真正发挥潜力，问题不在于 CSS 的支持，而在于是否存在对应的字体文件',
+        '如果没有对应的字体，又想要多档字重效果，这就需要用到@font-face',
+      ],
+      src: fontWeight,
+      tags: ['@font-face', 'font-weight'],
+      router: '/css/font/weight',
     },
   ];
   return (

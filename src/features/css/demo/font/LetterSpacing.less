@@ -1,0 +1,22 @@
+@import '../../../../styles/mixins';
+
+@keyframes textIn {
+  0% {
+    letter-spacing: -200px;
+  }
+  100% {
+    letter-spacing: 0;
+  }
+}
+
+.letter-spacing {
+  .letter-spacing-container {
+    text-align: center;
+    .letter-spacing-container-box {
+      width: 120px;
+      text-align: left;
+      margin: 0 auto;
+      animation: textIn 1s both;
+    }
+  }
+}
