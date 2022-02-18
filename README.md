@@ -12,4 +12,4 @@ npm start
 ```
 访问 [localhost:3100/css](http://localhost:3100/css)
 
-![img.png](img.png)
+![img.png](homepage.png)
