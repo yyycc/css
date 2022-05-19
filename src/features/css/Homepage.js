@@ -70,7 +70,7 @@ export default function Homepage() {
       ],
       src: text,
       tags: ['ellipsis', 'direction', 'dir'],
-      router: '/css/font',
+      router: '/css/font/direction',
     },
     {
       title: '文字少居中显示，超过一行居左效果',
@@ -197,8 +197,8 @@ export default function Homepage() {
       detail: [
         '多行文字使用一个标签包裹，然后设置 display 为 inline-block。',
         '产生一个非常关键的“行框盒子”。我们需要它附带的一个产物— “幽灵空白节点”，' +
-        '即一个宽度为 0、表现如同普通字符的看不见的“节点”。' +
-        '有了这个“幽灵空白节点”，我们的 line- height:120px 就有了作用的对象',
+          '即一个宽度为 0、表现如同普通字符的看不见的“节点”。' +
+          '有了这个“幽灵空白节点”，我们的 line- height:120px 就有了作用的对象',
       ],
       src: fontAlign,
       tags: ['内联', 'vertical-align'],
