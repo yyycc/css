@@ -13,13 +13,13 @@ const MyIndexContainer = ({ title, detail, src, color, tags = [], router, srcTyp
         <div className="my-index-container-content-tags">
           <span>{'标签: '}</span>
           {tags.map((ele, index) => (
-            <span key={index} className="my-index-container-content-tag">
+            <span key={ele} className="my-index-container-content-tag">
               {ele}
             </span>
           ))}
         </div>
         <div className="my-index-container-content-detail">
-          {detail.map(ele => <p>{ele}</p>)}
+          {detail.map(ele => <p key={ele}>{ele}</p>)}
         </div>
       </div>
       <div className="my-index-container-pic">

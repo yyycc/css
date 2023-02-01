@@ -16,6 +16,7 @@ import border from '../../images/border.jpg';
 import tape from '../../images/tape.jpg';
 import fontAlign from '../../images/fontAlign.jpg';
 import fontWeight from '../../images/fontWeight.jpg';
+import widthAuto from '../../images/widthAuto.jpg';
 
 export default function Homepage() {
   const colors = [
@@ -169,15 +170,15 @@ export default function Homepage() {
       router: '/css/box/border',
     },
     {
-      title: '利用border实现三角形',
+      title: 'width',
       detail: [
-        'border-width 却不支持百分比。',
-        'border-style 的默认值是 none。',
-        'border-color 默认颜色就是 color 色值',
+        'fill-avaliable： 100%父级容器',
+        'shrink-to-fit： 正好包裹住内部元素',
+        'min-content： 收缩为最小宽度',
       ],
-      src: border,
-      tags: ['border'],
-      router: '/css/box/border',
+      src: widthAuto,
+      tags: ['width'],
+      router: '/css/width',
     },
     {
       title: '标题胶带',

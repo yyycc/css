@@ -21,6 +21,7 @@ const HeightPercent = () => {
           在内；非定位元素则是相对于 content box 计算的,宽高百分比计算不会将 padding 计算在内
         </p>
       </div>
+      <div class={"cyy-test"}></div>
     </div>
   );
 };
