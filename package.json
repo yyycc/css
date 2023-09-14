@@ -81,6 +81,9 @@
     "not ie <= 11",
     "not op_mini all"
   ],
+  "engines": {
+    "node": ">16.14.0 <17"
+  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
