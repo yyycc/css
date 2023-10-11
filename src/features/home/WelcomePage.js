@@ -21,6 +21,10 @@ export default function WelcomePage() {
             To see examples, access:&nbsp;
             <Link to="/examples">/examples</Link>
           </li>
+          <li>
+            To see css, access:&nbsp;
+            <Link to="/css">/css</Link>
+          </li>
         </ul>
       </div>
     </div>
